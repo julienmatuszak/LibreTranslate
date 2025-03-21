@@ -1,3 +1,3 @@
-FROM uav4geo/libretranslate:latest  
+FROM libretranslate/libretranslate:latest
 EXPOSE 5000  
 CMD ["libretranslate"]  
