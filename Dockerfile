@@ -1,4 +1,5 @@
-FROM libretranslate/libretranslate:latest  # Use the latest LibreTranslate image
+# Use the latest LibreTranslate image
+FROM libretranslate/libretranslate:latest
 
 # Expose port 10000 (Render's required port)
 EXPOSE 10000
