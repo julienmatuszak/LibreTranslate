@@ -5,4 +5,4 @@ FROM libretranslate/libretranslate:latest
 EXPOSE 10000
 
 # Command to run LibreTranslate on the Render-specified port
-CMD ["libretranslate", "--host", "0.0.0.0", "--port", "5000"]
+CMD ["--host", "0.0.0.0", "--port", "5000"]
