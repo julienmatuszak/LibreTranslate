@@ -1,10 +1,7 @@
-FROM libretranslate/libretranslate:latest
-
-# Use the PORT environment variable provided by Render
-ENV PORT=${PORT:-5000}
+FROM libretranslate/libretranslate:latest  # Use the latest LibreTranslate image
 
 # Expose the port (for documentation purposes)
-EXPOSE $PORT
+EXPOSE 10000  # Expose the Render default port
 
-# Start LibreTranslate with the Render-specified port
-CMD ["--host", "0.0.0.0", "--port", "$PORT"]
+# Use the environment variable, but pass it correctly in the CMD
+CMD ["sh", "-c", "libretranslate --host 0.0.0.0 --port ${PORT:-5000}"]
