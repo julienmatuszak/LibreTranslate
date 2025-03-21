@@ -7,4 +7,4 @@ ENV PORT=${PORT:-5000}
 EXPOSE $PORT
 
 # Start LibreTranslate with the Render-specified port
-CMD ["libretranslate", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["--host", "0.0.0.0", "--port", "$PORT"]
